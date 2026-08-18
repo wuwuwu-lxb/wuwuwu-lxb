@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-labelledby="title desc">
+  <title id="title">wuwuwu-lxb terminal profile</title>
+  <desc id="desc">An animated terminal introducing the GitHub profile of wuwuwu-lxb.</desc>
+
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#28e6a5" />
+      <stop offset="0.5" stop-color="#69d4ff" />
+      <stop offset="1" stop-color="#ff5ca8" />
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="12%" r="95%">
+      <stop offset="0" stop-color="#173249" stop-opacity="0.72" />
+      <stop offset="0.48" stop-color="#101922" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#090d12" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#8aa0b4" stroke-opacity="0.055" />
+    </pattern>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="line1"><rect x="54" y="82" width="0" height="30"><animate attributeName="width" values="0;520;520" keyTimes="0;0.16;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="line2"><rect x="54" y="124" width="0" height="30"><animate attributeName="width" values="0;0;470;470" keyTimes="0;0.2;0.36;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="line3"><rect x="54" y="166" width="0" height="30"><animate attributeName="width" values="0;0;555;555" keyTimes="0;0.4;0.58;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="line4"><rect x="54" y="208" width="0" height="30"><animate attributeName="width" values="0;0;620;620" keyTimes="0;0.62;0.84;1" dur="10s" repeatCount="indefinite" /></rect></clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="318" rx="8" fill="url(#frame)" />
+  <rect x="2" y="2" width="896" height="316" rx="7" fill="#090d12" />
+  <rect x="2" y="2" width="896" height="316" rx="7" fill="url(#glow)" />
+  <rect x="2" y="42" width="896" height="274" fill="url(#grid)" />
+
+  <path d="M2 42H898" stroke="#25313e" />
+  <circle cx="24" cy="22" r="5" fill="#ff5f57" />
+  <circle cx="44" cy="22" r="5" fill="#febc2e" />
+  <circle cx="64" cy="22" r="5" fill="#28c840" />
+  <text x="450" y="27" text-anchor="middle" fill="#7d8b99" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">wuwuwu-lxb@github: ~</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">
+    <g clip-path="url(#line1)">
+      <text x="54" y="104" fill="#28e6a5">$</text>
+      <text x="78" y="104" fill="#d8e2ec">whoami</text>
+      <text x="172" y="104" fill="#69d4ff" filter="url(#softGlow)">wuwuwu-lxb</text>
+    </g>
+
+    <g clip-path="url(#line2)">
+      <text x="54" y="146" fill="#28e6a5">$</text>
+      <text x="78" y="146" fill="#d8e2ec">mode</text>
+      <text x="138" y="146" fill="#a8b8c8">--set</text>
+      <text x="210" y="146" fill="#ff5ca8">build · learn · repeat</text>
+    </g>
+
+    <g clip-path="url(#line3)">
+      <text x="54" y="188" fill="#28e6a5">$</text>
+      <text x="78" y="188" fill="#d8e2ec">git status</text>
+      <text x="210" y="188" fill="#7d8b99">//</text>
+      <text x="246" y="188" fill="#69d4ff">shipping something useful</text>
+    </g>
+
+    <g clip-path="url(#line4)">
+      <text x="54" y="230" fill="#28e6a5">$</text>
+      <text x="78" y="230" fill="#d8e2ec">echo</text>
+      <text x="138" y="230" fill="#a8b8c8">"ideas become real when they ship."</text>
+      <rect x="525" y="212" width="10" height="22" fill="#28e6a5" filter="url(#softGlow)">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.48;0.5;1" dur="1s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+
+  <g transform="translate(54 275)">
+    <circle cx="5" cy="0" r="4" fill="#28e6a5" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="19" y="5" fill="#718091" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">SYSTEM ONLINE</text>
+    <text x="790" y="5" fill="#718091" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">CN / UTC+8</text>
+  </g>
+</svg>
+
